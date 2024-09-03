@@ -83,18 +83,15 @@
 
 .skill-tag-in-projects {
     background-color: #123C69;
-    color: #EEE2DC;
+    color: #EDC7B7;
     border-radius: 20px;
     padding: 8px 16px; /* Larger for better visibility */
-    font-size: 12px; /* Larger text for better legibility */
+    font-size: 0.75rem; /* Smaller font size for tags */
+   
     box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.skill-tag-in-projects:hover {
-    background-color: #AC3B61; /* Change color on hover */
-    transform: translateY(-5px);
-}
 
 @media (max-width: 768px) {
     .projects-container {

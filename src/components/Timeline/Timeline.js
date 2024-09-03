@@ -17,12 +17,14 @@ function Timeline() {
           dates="Aug 2024 - Present"
           description="Developed proof of concept for features in the flagship product, ActiveDocumentation."
           location="Fairfax, Virginia, United States"
+          skills={["React", "Java"]}
         />
         <TimelineElement
           role="MS in Computer Science"
           company="George Mason University"
           dates="Aug 2022 - May 2024"
           location = "Fairfax, Virginia, United States"
+          skills={["Java", "SpringBoot", "MySQL", "AWS", "Kubernetes", "Docker", "Rancher", "Helm", "Python"]}
         />
         <TimelineElement
           role="Software Engineer"
@@ -30,6 +32,7 @@ function Timeline() {
           dates="Jun 2019 - Jul 2022"
           description="Transformed legacy applications into microservices architecture, led security enhancements."
           location="Mumbai, Maharashtra, India"
+          skills={["Java", "Primefaces", "OracleDB", "MySQL"]}
         />
         <TimelineElement
           role="Security Advisor"
@@ -37,6 +40,7 @@ function Timeline() {
           dates="Feb 2021 - Jul 2022"
           description="Transformed legacy applications into microservices architecture, led security enhancements."
           location="Mumbai, Maharashtra, India"
+          skills={["Java", "Fortify", "Burp Suite", "OWASP ZAP"]}
         />
          <TimelineElement
           role="Business Analyst"
@@ -44,18 +48,14 @@ function Timeline() {
           dates="Jun 2019 - Feb 2020"
           description="Optimized Agile SDLC workflows, improving project delivery and team efficiency."
           location = "Mumbai, Maharashtra, India"
+          skills={["Katalon Studio"]}
         />
         <TimelineElement
-          role="B.E. in Computer Engineering"
+          role="BE in Computer Engineering"
           company="University of Mumbai"
           dates="Jul 2015 - May 2019"
           location = "Mumbai, Maharashtra, India"
-        />
-        <TimelineElement
-          role="Chairperson"
-          company="Computer Society of India, University of Mumbai"
-          dates="May 2018 - Apr 2019"
-          location = "Mumbai, Maharashtra, India"
+          skills={["Java", "Android Studio", "VS Code"]}
         />
         {/* Additional TimelineElements as needed */}
       </VerticalTimeline>

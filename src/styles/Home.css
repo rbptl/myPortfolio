@@ -46,23 +46,23 @@
   min-height: 100vh; /* Ensures section fills the viewport */
   background: #eee2dc; /* Light grey background */
   color: #123c69; /* Dark grey text for contrast */
-  position: relative;
+  /* position: relative; */
 }
 
 .text-content h1 {
-  font-size: 60pt;
+  font-size: 45pt;
   margin-top: -2em;
   margin-bottom: 0em; /* Adjust the bottom margin to reduce/increase spacing */
 }
 
 .text-content h2 {
-  font-size: 40pt;
+  font-size: 32pt;
   margin-top: 0em; /* Manage top margin if needed */
   margin-bottom: 1em; /* Adjust the bottom margin to reduce/increase spacing */
 }
 
 .text-content p {
-  font-size: 17pt;
+  font-size: 15pt;
   margin-top: 0em; /* Manage top margin if needed */
   margin-bottom: 1em; /* Adjust the bottom margin to give space before social icons or other content */
   text-align: justify;

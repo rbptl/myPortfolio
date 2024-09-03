@@ -24,8 +24,35 @@
     line-height: 1.5; /* Enhances readability by increasing line spacing */
     color: #123C69; /* Dark grey for contrast and readability */
     background: #edc7b7;
+    transition: transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+    /* overflow: hidden; */
+    z-index: 0;
 }
 
+/*
+.vertical-timeline-element--work .vertical-timeline-element-content::after {
+    content: "";
+    position: absolute;
+    top: -110%;
+    left: -220%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(172, 59, 97, 0.2);  Soft red overlay 
+    transition: all 0.6s ease-in-out;
+    transform: rotate(30deg);
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-content:hover::after {
+    top: -30%;
+    left: -30%;
+    transform: rotate(0deg);
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-content:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+*/
 .vertical-timeline-element--work .vertical-timeline-element-title {
     font-size: 1.4rem; /* Slightly larger size for titles */
     color: #AC3B61; /* Color that stands out but matches the icon color */
@@ -68,3 +95,23 @@
 .vertical-timeline-element {
     margin: 40px 0; /* Adds more vertical space between elements */
 }
+
+.timeline-skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 5px;
+    justify-content: flex-start; /* Center the tags within the timeline element */
+}
+
+.skill-tag-in-timeline {
+    background-color: #123C69; /* Dark blue */
+    color: #EDC7B7; /* Light text color for contrast */
+    border-radius: 15px; /* Rounded corners for tags */
+    padding: 5px 10px; /* Padding around text */
+    margin: 2px; /* Space between tags */
+    font-size: 0.75rem; /* Smaller font size for tags */
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.3s;
+   }
+
