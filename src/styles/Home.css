@@ -39,9 +39,10 @@
 
 .home-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: flex-start; /* Start aligning items from the left */
-  padding: 0px 12em 0px 12em; /* Adjusted padding */
+  justify-content: center; /* Start aligning items from the left */
+  /* padding: 0px 12em 0px 12em; Adjusted padding */
   /* margin-bottom: 250px; */
   min-height: 100vh; /* Ensures section fills the viewport */
   background: #eee2dc; /* Light grey background */
@@ -49,22 +50,23 @@
   /* position: relative; */
 }
 
+.text-content{
+  margin-left: 20px;
+}
 .text-content h1 {
   font-size: 45pt;
-  margin-top: -2em;
-  margin-bottom: 0em; /* Adjust the bottom margin to reduce/increase spacing */
+  margin-top: -100px;
 }
 
 .text-content h2 {
   font-size: 32pt;
-  margin-top: 0em; /* Manage top margin if needed */
-  margin-bottom: 1em; /* Adjust the bottom margin to reduce/increase spacing */
+  margin-top: -40px;
 }
 
 .text-content p {
   font-size: 15pt;
-  margin-top: 0em; /* Manage top margin if needed */
-  margin-bottom: 1em; /* Adjust the bottom margin to give space before social icons or other content */
+  margin-top: 80px;
+  margin-right: 100px;
   text-align: justify;
   text-align-last: left; /* Aligns the last line to the left */
 }
@@ -76,6 +78,7 @@
   display: flex;
   justify-content: center; /* Center the buttons horizontally */
   gap: 20px; /* Space between buttons */
+  position: relative;
 }
 .button{
   padding: 12px 24px; /* Adequate padding but not too wide */
@@ -98,9 +101,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 280px;
-  margin-left: 180px;
-  margin-top: -8em;
+
 }
 
 .container {
@@ -154,6 +155,57 @@
   .home-container {
     flex-direction: column;
     text-align: center;
-    padding: 50px 2em;  /* Reduced padding for smaller screens */
+    margin: 0;
+    /* padding: 50px 2em;  Reduced padding for smaller screens */
   }
+  
+.text-content{
+  margin: 20px;
+}
+
+.text-content h1 {
+  margin:10px auto;
+  font-size: 40pt;
+}
+
+.text-content h2 {
+  margin: 10px auto;
+  font-size: 30pt;
+ }
+
+.text-content p {
+  margin: 10px auto;
+  font-size: 14pt;
+}
+
+.person{
+  margin-right: 13px;
+}
+
+}
+
+@media (max-width: 480) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    /* padding: 50px 2em;  Reduced padding for smaller screens */
+  }
+
+  .text-content{
+    margin: 0px;
+  }
+
+  .text-content h1 {
+    margin:0px;
+  }
+  
+  .text-content h2 {
+    margin: 0px;
+   }
+  
+  .text-content p {
+    margin:0px;
+  }
+  
 }

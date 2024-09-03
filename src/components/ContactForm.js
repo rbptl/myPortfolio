@@ -25,8 +25,8 @@ function ContactForm() {
             <h2>Contact Me</h2>
             <p>If you prefer, directly email me at <a href="mailto:rajaspatil14@gmail.com">rajaspatil14@gmail.com</a> or fill out the form below.</p>
             <div className="social-icons">
-                <a href="https://linkedin.com/in/rajaspatil" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                <a href="https://github.com/rajaspatil" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                <a href="https://linkedin.com/in/rajaspatil98" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                <a href="https://github.com/RBP98" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                 <a href="mailto:rajaspatil14@gmail.com"><FaEnvelope /></a>
             </div>
             <form className="contact-form" onSubmit={handleSubmit}>

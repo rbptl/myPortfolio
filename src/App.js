@@ -5,18 +5,19 @@ import Timeline from './components/Timeline/Timeline';
 import Skills from './components/Skills/Skills';
 import Projects from './components/Projects';
 import ContactForm from './components/ContactForm';
+import Layout from './components/Layout';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <Layout>
       <NavBar />
       <div id="home"><Home /></div>
       <div id="timeline"><Timeline /></div>
       <div id="skills"><Skills /></div>
       <div id="projects"><Projects /></div>
       <div id="contact-form"><ContactForm /></div>
-    </div>
+    </Layout>
   );
 }
 

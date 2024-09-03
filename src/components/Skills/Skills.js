@@ -41,7 +41,7 @@ const Skills = () => {
     });
 
     return (
-        <div className="skills-container section" ref={ref}>
+    <div className="skills-container" ref={ref}>
             <h2>Skills</h2>
             {Object.entries(skillsData).map(([category, skills]) => (
                 <motion.div
@@ -51,6 +51,7 @@ const Skills = () => {
                     animate={inView ? "visible" : "hidden"}
                     variants={containerVariants}
                 >
+                    
                     <h3>{category}</h3>
                     <motion.div className="skill-tags">
                         {skills.map(skill => (
@@ -61,6 +62,7 @@ const Skills = () => {
                     </motion.div>
                 </motion.div>
             ))}
+
         </div>
     );
 };

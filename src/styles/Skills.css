@@ -1,41 +1,41 @@
 .skills-container {
     display: flex;
-    justify-content: center; /* Center the skill categories horizontally */
-    align-items: flex-start; /* Align items to the top */
-    
+    justify-content: center; /*Center the skill categories horizontally */
+    align-items: flex-start;/* Align items to the top */
+    flex-direction: row;
+    min-height: 100vh;
     background-color: #EEE2DC; /* Default background */
     text-align: center; /* Ensure text is centered */
-    padding: 0px 12em; /* Adjusted top padding */
     flex-wrap: wrap; /* Allow categories to wrap on smaller screens */
     
 }
 
 .skills-container h2 {
-    width:100%;
+    width: 100%;
     color: #123C69; /* Dark blue color from your palette */
     font-size: 2.8rem; /* Large font size for header */
-    margin-bottom: 0; /* Redu   ced space below the header */
+    margin-bottom: 0; /* Reduced space below the header */
     text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
 
 .skill-category h3 {
     height: 80px; /* Fixed height for all h3 tags */
     color: #AC3B61; /* Reddish color for category titles */
-    margin-bottom: 10px; /* Reduced space below the category title */
-    font-size: 1.3rem; /* Size for readability */
+    /* margin-bottom: 10px; Reduced space below the category title */
+    font-size: 1.  1rem; /* Size for readability */
     display: flex; /* Use flexbox to vertically center text */
     /* align-items: center; Center text vertically */
     justify-content: center; /* Center text horizontally */
-    margin-top: -6em;
+    /* margin-top: -6em; */
 }
 
 .skill-category {
-    flex: 1; /* Grow to fill space */
+    /* flex: 1; Grow to fill space */
     width: 120px; /*Minimum width for each category */
-    margin: 5px; /* Space around each category */
+    /* margin: 5px; Space around each category */
     padding: 10px;
     border-radius: 15px;
-    margin-top: 0;
+    /* margin-top: 0; */
     
     /*background-color: #EDC7B7;  Lighter background for each category 
     box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Soft shadow for depth */

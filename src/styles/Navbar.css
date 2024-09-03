@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-between; /* Adjusted to space-between to include home link on the left */
-    padding: 0 11em; /* Added padding to ensure spacing on the sides */
+    padding: 0px; /* Added padding to ensure spacing on the sides */
     height: 55px; /* Height of the navbar */
     background-color: #eee2dc; /* Background color */
     position: sticky;
@@ -48,13 +48,16 @@
 
 @media (max-width: 768px) {
     .navbar {
-        justify-content: center; /* Center the links for mobile */
+        justify-content: space-between; /* Center the links for mobile */
+        height: 45px;
+
     }
     .navbar a {
-        margin-right: 10px; /* Smaller margin on mobile */
-        padding: 5px 10px; /* Smaller padding on mobile */
+        margin: 0px; /* Smaller margin on mobile */
+        padding: 5px; /*Smaller padding on mobile*/
+        font-size: 15px;
     }
     .nav-links {
-        flex-direction: column; /* Stack links vertically on mobile */
+        flex-direction: row; /* Stack links vertically on mobile */
     }
 }
