@@ -1,0 +1,70 @@
+/* Timeline.css - Overall container styles */
+.timeline {
+    background-color: #EEE2DC; /* Preserved color for overall timeline background */
+    /* padding: 20px; */
+    padding-top: 0px;
+}
+
+/* Timeline.css - Adjustments for centering and styling the heading */
+.timeline h2 {
+    text-align: center; /* Centers the heading */
+    font-size: 2.8rem; /* Increases the size for emphasis */
+    color: #123C69; /* Uses a strong color for heading to make it stand out */
+    font-weight: bold; /* Makes the heading bold */
+    margin-bottom: 30px; /* Adds space below the heading */
+    margin-top: 0px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+
+/* Adjustments for content within timeline elements */
+.vertical-timeline-element--work .vertical-timeline-element-content {
+    padding: 20px; /* Ensure padding is sufficient for content spacing */
+    font-size: 1rem; /* Standard size for readability */
+    line-height: 1.5; /* Enhances readability by increasing line spacing */
+    color: #123C69; /* Dark grey for contrast and readability */
+    background: #edc7b7;
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-title {
+    font-size: 1.4rem; /* Slightly larger size for titles */
+    color: #AC3B61; /* Color that stands out but matches the icon color */
+    margin-bottom: 10px; /* Adds space below the title */
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-subtitle {
+    font-size: 1.2rem; /* Appropriate size for subtitles */
+    color: #123C69; /* Subtle contrast for subtitle */
+    margin-bottom: 15px; /* Space below subtitle before description */
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px #123C69, 0 2px 5px rgba(0, 0, 0, 0.2); /* Enhanced shadow for the icon */
+    margin-bottom: 15px; /* Ensures consistent space between the icon and the content box */
+}
+
+.vertical-timeline-element-icon {
+    background: #AC3B61 !important; /* Deep red color for the icons */
+}
+
+/* Adjustments for the icon's SVG specifically */
+.vertical-timeline-element-icon svg {
+    color: #EEE2DC; /* Lightest color for icon SVG */
+    font-size: 30px; /* Increase the size of the icons */
+}
+
+/* Enhanced responsiveness and spacing */
+.vertical-timeline {
+    margin: 0 auto; /* Centers the timeline in its container */
+    max-width: 960px; /* Sets a max width for wider screens */
+}
+
+.vertical-timeline-element-content {
+    text-align: left; /* Ensures text alignment is consistent */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Spacing between each timeline element */
+.vertical-timeline-element {
+    margin: 40px 0; /* Adds more vertical space between elements */
+}

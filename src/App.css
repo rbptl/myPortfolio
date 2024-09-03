@@ -1,78 +1,25 @@
-section {
-  padding: 20px;
-  border-bottom: 1px solid #ccc;
+.section {
+  min-height: 100vh; /* Ensures each section takes at least the full height of the viewport */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 }
 
-h2 {
-  color: #333;
-}
-
-li {
-  margin-bottom: 10px;
+.wave-background {
   position: relative;
-  padding-left: 20px;
-  list-style: none;
-  padding: 0;
+  background: #23a6d5;
+  overflow: hidden;
 }
 
-li::before {
-  content: '';
+.wave-background::after {
+  content: "";
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #333;
-}
-.timeline-container {
-  position: relative;
-  padding-left: 50px;
-  margin: 20px 0;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23fff" fill-opacity="1" d="M0,192L60,202.7C120,213,240,235,360,213.3C480,192,600,128,720,112C840,96,960,128,1080,144C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>');
+  animation: waveMove 30s linear infinite;
 }
 
-.timeline-item {
-  position: relative;
-  margin-bottom: 20px;
+@keyframes waveMove {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
 }
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: #333;
-  border: 3px solid #fff; /* Gives a nice border around the circle */
-}
-
-.timeline-content {
-  padding-left: 40px;
-  background-color: #f9f9f9;
-  padding: 10px;
-  border-radius: 6px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-}
-
-.timeline-content h3 {
-  margin-top: 0;
-  color: #333;
-}
-
-.timeline-content p {
-  margin-bottom: 0;
-}
-
-/* Add a line connecting the items */
-.timeline-container::after {
-  content: '';
-  position: absolute;
-  left: 11px; /* Center the line in the middle of the circle */
-  top: 0;
-  height: 100%;
-  width: 3px;
-  background: #ccc;
-  z-index: -1;
-}
+  

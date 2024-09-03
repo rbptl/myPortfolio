@@ -1,41 +1,60 @@
 .navbar {
     display: flex;
-    justify-content: flex-end; /* Aligns children (links) to the right */
-    padding: 0  0px; /* Consistent padding on the sides */
-    height: 55px; /* Increased height for a thicker navbar */
-    background-color: #eee2dc; /* Background color of the navbar */
-    /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); Subtle shadow for depth */
+    justify-content: space-between; /* Adjusted to space-between to include home link on the left */
+    padding: 0 11em; /* Added padding to ensure spacing on the sides */
+    height: 55px; /* Height of the navbar */
+    background-color: #eee2dc; /* Background color */
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+.navbar .home-link {
+    font-weight: bold; /* Bold to distinguish home link */
+    color: #123c69; /* Same color theme */
+    transition: color 0.3s, background-color 0.3s; /* Consistent transitions */
+}
+
+.nav-links {
+    display: flex;
+}
+
 .navbar a {
-    margin-right: 0px; /* Right margin for spacing between links */
-    text-decoration: none; /* Removes underline from links */
-    color: #BAB2B5; /* Dark grey text color for contrast */
-    font-size: 21px; /* Larger font size for better readability */
-    padding: 14px 30px; /* Increased padding for larger clickable area */
-    border-radius: 0px; /* Rounded corners for a softer look */
+    color: #BAB2B5; /* Text color */
+    font-size: 21px; /* Font size */
+    padding: 14px 15px; /* Padding for clickable area */
+    border-radius: 0px; /* Rounded corners */
     transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
 }
 
 .navbar a:hover {
-    background-color:  #AC3b61; /* Changes background on hover */
-    color: #123c69; /* Changes text color on hover */
+    background-color: #AC3b61; /* Hover background color */
+    color: #123c69; /* Text color on hover */
 }
 
-.navbar a.active {
-    border-bottom: 3px solid #AC3b61; /* Underline effect for active link */
+.navbar .home-link:hover{
+    background-color: transparent;
+    color:  #AC3b61;
+    cursor: default;
+    transform: scale(1.2);
 }
 
+.navbar .home-link.active{
+    border-bottom: 0px; /* RemoveActive state underline */
+}
+.navbar a.active {  
+    border-bottom: 3px solid #AC3b61; /* Active state underline */
+}
 
 @media (max-width: 768px) {
     .navbar {
-        justify-content: center; /* Center-aligns the nav links on smaller screens */
+        justify-content: center; /* Center the links for mobile */
     }
     .navbar a {
-        margin-right: 10px; /* Reduces margin between links on smaller screens */
-        padding: 5px 10px; /* Reduces padding around links for smaller screens */
+        margin-right: 10px; /* Smaller margin on mobile */
+        padding: 5px 10px; /* Smaller padding on mobile */
+    }
+    .nav-links {
+        flex-direction: column; /* Stack links vertically on mobile */
     }
 }

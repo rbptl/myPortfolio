@@ -1,10 +1,10 @@
 import React from 'react';
 import NavBar from './components/Navbar';
 import Home from './components/Home';
-import Timeline from './components/Timeline';
-import Resume from './components/Resume';
+import Timeline from './components/Timeline/Timeline';
+import Skills from './components/Skills/Skills';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
+import ContactForm from './components/ContactForm';
 import './App.css';
 
 function App() {
@@ -12,10 +12,10 @@ function App() {
     <div className="App">
       <NavBar />
       <div id="home"><Home /></div>
-      {/* <div id="timeline"><Timeline /></div>
-      <div id="resume"><Resume /></div>
+      <div id="timeline"><Timeline /></div>
+      <div id="skills"><Skills /></div>
       <div id="projects"><Projects /></div>
-      <div id="contact"><Contact /></div> */}
+      <div id="contact-form"><ContactForm /></div>
     </div>
   );
 }
