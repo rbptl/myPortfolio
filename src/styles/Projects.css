@@ -93,12 +93,48 @@
 }
 
 
+/* Base styles are already defined, now add responsive adjustments */
+
 @media (max-width: 768px) {
     .projects-container {
-        padding: 10px;
+        padding: 2px 1em; /* Less padding on smaller screens */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .project-card {
-        width: 95%;
+        width: 90%; /* Full width on smaller screens */
+        margin: 10px 0; /* Reduced margin */
+    }
+
+    .project-card p,
+    .project-skills {
+        font-size: 16px; /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+
+    .projects-container {
+        padding: 2px 1em; /* Less padding on smaller screens */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%; /* Full width on smaller screens */
+        margin: 10px 0; /* Reduced margin */
+    }
+
+    .project-card h3 {
+        font-size: 24px; /* Even smaller title on very small screens */
+    }
+
+    .skill-tag-in-projects {
+        font-size: 0.45rem; /* Smaller font for skill tags on small screens */
     }
 }

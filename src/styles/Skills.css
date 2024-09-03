@@ -64,6 +64,8 @@
 
 @media (max-width: 768px) {
     .skills-container {
+        justify-content: center; /*Center the skill categories horizontally */
+    
         flex-direction: column;
         align-items: center; /* Center everything on smaller screens */
         padding: 10px; /* Adjust padding for smaller screens */
@@ -71,5 +73,16 @@
 
     .skill-category {
         width: 100%; /* Full width for mobile view */
+        margin-bottom: 30px;
     }
+
+    .skill-category h3 {
+        height: 20px; /* Fixed height for all h3 tags */
+    }
+
+    .skill-tag {
+        width: 40%;
+        padding: 6px;
+    }
+
 }

@@ -61,3 +61,20 @@
         flex-direction: row; /* Stack links vertically on mobile */
     }
 }
+
+@media (max-width: 480px) {
+    .navbar {
+        justify-content: space-between; /* Center the links for mobile */
+        height: 35px;
+
+    }
+    .navbar a {
+        margin: 0px; /* Smaller margin on mobile */
+        padding: 5px; /*Smaller padding on mobile*/
+        font-size: 13px;
+    }
+    .nav-links {
+        flex-direction: row; /* Stack links vertically on mobile */
+    }
+}
+

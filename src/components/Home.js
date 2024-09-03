@@ -15,7 +15,7 @@ function Home() {
       else if (hrs < 8) msg = "Hello, Early Riser!";
       else if (hrs < 12) msg = "Hey, Mornin' Sunshine!";
       else if (hrs < 14) msg = "Hey, Lunchtime soon?";
-      else if (hrs < 17) msg = "Hey, Fine Afternoon, huh?";
+      else if (hrs < 18) msg = "Hey, Fine Afternoon, huh?";
       else if (hrs < 22) msg = "Hey, What's for Dinner?";
       else msg = "Hey, Bedtime soon?";
 

@@ -37,7 +37,7 @@ const itemVariants = {
 const Skills = () => {
     const { ref, inView } = useInView({
         // triggerOnce: true, // Only trigger this once
-        threshold: 0.5 // Trigger when 30% of the component is in view
+        threshold: 0.2 // Trigger when 30% of the component is in view
     });
 
     return (

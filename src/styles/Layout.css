@@ -3,7 +3,7 @@
     max-width: 1200px; /* Adjust based on your design needs */
     margin: 0 auto; /* Center the container */
     /* padding: 20px; Padding inside the container */
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    /* overflow-x: hidden; Prevent horizontal overflow */
     min-height: 100vh; /* Optional: full viewport height */
     display: flex;
     flex-direction: column; /* Stack content vertically */
@@ -14,6 +14,15 @@
     .site-container {
         padding: 10px;
         min-height: 120vh; /* Optional: full viewport height */
+   
+    }
+}
+
+@media (max-width: 480px) {
+    .site-container {
+        padding: 10px;
+        
+        /* min-height: 120vh; Optional: full viewport height */
    
     }
 }
