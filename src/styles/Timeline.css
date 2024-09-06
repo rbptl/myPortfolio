@@ -1,15 +1,16 @@
 /* Timeline.css - Overall container styles */
 .timeline {
-    background-color: #EEE2DC; /* Preserved color for overall timeline background */
+    background-color: var(--background-color); /* Preserved color for overall timeline background */
     /* padding: 20px; */
     padding-top: 0px;
+    
 }
 
 /* Timeline.css - Adjustments for centering and styling the heading */
 .timeline h2 {
     text-align: center; /* Centers the heading */
     font-size: 2.8rem; /* Increases the size for emphasis */
-    color: #123C69; /* Uses a strong color for heading to make it stand out */
+    color: var(--heading-and-text-color); /* Uses a strong color for heading to make it stand out */
     font-weight: bold; /* Makes the heading bold */
     margin-bottom: 30px; /* Adds space below the heading */
     margin-top: 0px;
@@ -20,10 +21,10 @@
 /* Adjustments for content within timeline elements */
 .vertical-timeline-element--work .vertical-timeline-element-content {
     padding: 20px; /* Ensure padding is sufficient for content spacing */
-    font-size: 1rem; /* Standard size for readability */
+    font-size: 20pt !important;
     line-height: 1.5; /* Enhances readability by increasing line spacing */
-    color: #123C69; /* Dark grey for contrast and readability */
-    background: #edc7b7;
+    color: var(--heading-and-text-color); /* Dark grey for contrast and readability */
+    background: var(--card-background-color);
     transition: transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
     /* overflow: hidden; */
     z-index: 0;
@@ -37,7 +38,7 @@
     left: -220%;
     width: 200%;
     height: 200%;
-    background-color: rgba(172, 59, 97, 0.2);  Soft red overlay 
+    background-color: var(--card-animation-color);  Soft red overlay 
     transition: all 0.6s ease-in-out;
     transform: rotate(30deg);
 }
@@ -55,45 +56,49 @@
 */
 .vertical-timeline-element--work .vertical-timeline-element-title {
     font-size: 1.4rem; /* Slightly larger size for titles */
-    color: #AC3B61; /* Color that stands out but matches the icon color */
+    color: var(--second-heading-color); /* Color that stands out but matches the icon color */
     margin-bottom: 10px; /* Adds space below the title */
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-subtitle {
     font-size: 1.2rem; /* Appropriate size for subtitles */
-    color: #123C69; /* Subtle contrast for subtitle */
+    color: var(--heading-and-text-color); /* Subtle contrast for subtitle */
     margin-bottom: 15px; /* Space below subtitle before description */
 }
 
 .vertical-timeline-element--work .vertical-timeline-element-icon {
-    box-shadow: 0 0 0 4px #123C69, 0 2px 5px rgba(0, 0, 0, 0.2); /* Enhanced shadow for the icon */
+    box-shadow: 0 0 0 4px var(--heading-and-text-color), 0 2px 5px rgba(0, 0, 0, 0.2); /* Enhanced shadow for the icon */
     margin-bottom: 15px; /* Ensures consistent space between the icon and the content box */
 }
 
 .vertical-timeline-element-icon {
-    background: #AC3B61 !important; /* Deep red color for the icons */
+    background: var(--second-heading-color) !important; /* Deep red color for the icons */
 }
 
 /* Adjustments for the icon's SVG specifically */
 .vertical-timeline-element-icon svg {
-    color: #EEE2DC; /* Lightest color for icon SVG */
-    font-size: 30px; /* Increase the size of the icons */
+    color: var(--background-color); /* Lightest color for icon SVG */
+    
 }
 
 /* Enhanced responsiveness and spacing */
 .vertical-timeline {
     margin: 0 auto; /* Centers the timeline in its container */
     max-width: 960px; /* Sets a max width for wider screens */
+    
 }
 
 .vertical-timeline-element-content {
     text-align: left; /* Ensures text alignment is consistent */
     line-height: 1.6; /* Improves readability */
+    
+    
 }
 
 /* Spacing between each timeline element */
 .vertical-timeline-element {
     margin: 40px 0; /* Adds more vertical space between elements */
+    
 }
 
 .timeline-skills {
@@ -105,12 +110,12 @@
 }
 
 .skill-tag-in-timeline {
-    background-color: #123C69; /* Dark blue */
-    color: #EDC7B7; /* Light text color for contrast */
+    background-color: var(--heading-and-text-color); /* Dark blue */
+    color: var(--card-background-color); /* Light text color for contrast */
     border-radius: 15px; /* Rounded corners for tags */
     padding: 5px 10px; /* Padding around text */
     margin: 2px; /* Space between tags */
-    font-size: 0.75rem; /* Smaller font size for tags */
+    font-size: 0.7rem; /* Smaller font size for tags */
     box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     transition: background-color 0.3s, transform 0.3s;
    }

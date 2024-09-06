@@ -11,13 +11,13 @@ const projectsData = [
     {
         title: "FullStack DevOps Pipeline",
         description: "Developed and deployed a CI/CD pipeline integrating Docker, AWS, Kubernetes, and Jenkins.",
-        github: "https://github.com/yourusername/fullstack-devops",
+        github: "https://github.com/RBP98/full-stack-devops-pipeline",
         skills: ["Docker", "AWS", "Kubernetes", "Jenkins"]
     },
     {
         title: "Hearts",
         description: "Designed a secure multiplayer card game using Spring Boot and Angular with TLS encryption.",
-        github: "https://github.com/yourusername/secured-hearts",
+        github: "https://github.com/sanjeev30/hearts-card-game-server",
         skills: ["Spring Boot", "Angular", "TLS", "JavaScript"]
     }
 ];

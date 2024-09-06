@@ -45,8 +45,8 @@
   /* padding: 0px 12em 0px 12em; Adjusted padding */
   /* margin-bottom: 250px; */
   min-height: 100vh; /* Ensures section fills the viewport */
-  background: #eee2dc; /* Light grey background */
-  color: #123c69; /* Dark grey text for contrast */
+  background: var(--background-color); /* Light grey background */
+  color: var(--heading-and-text-color); /* Dark grey text for contrast */
   /* position: relative; */
 }
 
@@ -64,15 +64,16 @@
 }
 
 .text-content p {
+  display: block;
   font-size: 15pt;
-  margin-top: 80px;
+  margin-top: 20px;
   margin-right: 100px;
   text-align: justify;
   text-align-last: left; /* Aligns the last line to the left */
 }
 
 .text-content h2 span{
-  color: #AC3b61;
+  color: var(--second-heading-color);
 }
 .button-container {
   display: flex;
@@ -82,10 +83,9 @@
 }
 .button{
   padding: 12px 24px; /* Adequate padding but not too wide */
-  background-color: #123C69; /* Dark blue from your palette */
-  color: #eee2dc; /* Text color */
-  /* font-weight: bold; Make text bold */
-  border: none; /* No border */
+  background-color: var(--heading-and-text-color); /* Dark blue from your palette */
+  color: var(--background-color); /* Text color */
+   border: none; /* No border */
   border-radius: 30px; /* Fully rounded edges */
   cursor: pointer; /* Cursor indicates clickable */
   transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for interactions */
@@ -93,7 +93,7 @@
 }
 
 .button:hover {
-  background-color: #AC3b61; /* Lighter grey on hover */
+  background-color: var(--second-heading-color); /* Lighter grey on hover */
   transform: scale(1.05);
 }
 
@@ -125,7 +125,7 @@
 }
 
 .circle {
-  background-color: #123c69;
+  background-color: var(--heading-and-text-color);
   border-radius: 50%;
   height: 380px;
   left: 10px;
@@ -155,7 +155,7 @@
   .home-container {
     flex-direction: column;
     text-align: center;
-    margin: 0;
+    margin: 150px;
     min-height: 0vh; /* Ensures section fills the viewport */
  
     /* padding: 50px 2em;  Reduced padding for smaller screens */
@@ -210,7 +210,7 @@
   top: -200px;
 }
 .circle {
-  background-color: #123c69;
+  background-color: var(--heading-and-text-color);
   border-radius: 50%;
   cursor: pointer;
   height: 380px;
@@ -238,7 +238,7 @@
     flex-direction: column;
     text-align: center;
     margin: 0;
-    min-height: 0vh;
+    min-height: 100vh;
   }
 
   .text-content{
@@ -287,7 +287,7 @@
 }
 
 .circle {
-  background-color: #123c69;
+  background-color: var(--heading-and-text-color);
   border-radius: 50%;
   height: 380px;
   left: 10px;

@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #EEE2DC;
+    background-color: var(--background-color);
     padding: 0px 20px;
     animation: fadeIn 0.5s ease-in-out;
 }
@@ -30,12 +30,12 @@
 
 .social-icons a {
     font-size: 24px;
-    color: #123C69;
+    color: var(--heading-and-text-color);
     transition: color 0.3s, transform 0.3s;
 }
 
 .social-icons a:hover {
-    color: #AC3B61;
+    color: var(--second-heading-color);
     transform: scale(1.2);
 }
 
@@ -43,7 +43,7 @@
     width: 100%;
     max-width: 400px;
     padding: 40px;
-    background-color: #EDC7B7;
+    background-color: var(--card-background-color);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
     display: flex;
@@ -58,7 +58,7 @@
 
 
 .contact-form-container h2 {
-    color: #123C69; /* Dark blue color */
+    color: var(--heading-and-text-color); /* Dark blue color */
     margin-bottom: 30px; /* More space between title and form */
     font-size: 2.8rem; /* Slightly larger for prominence */
     
@@ -66,7 +66,7 @@
 
 .contact-form label {
     margin-bottom: 8px;
-    color: #123C69;
+    color: var(--heading-and-text-color);
 }
 
 .contact-form input,
@@ -80,13 +80,13 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    box-shadow: 0 0 0 2px #AC3B61; /* Highlight focus with a border */
+    box-shadow: 0 0 0 2px var(--second-heading-color); /* Highlight focus with a border */
 }
 
 .contact-form button {
     padding: 12px 24px; /* Adequate padding but not too wide */
-    background-color: #123C69; /* Dark blue from your palette */
-    color: #EDC7B7; /* Text color */
+    background-color: var(--heading-and-text-color); /* Dark blue from your palette */
+    color: var(--card-background-color); /* Text color */
     /* font-weight: bold; Make text bold */
     font-family: 'Montserrat', sans-serif;
     border: none; /* No border */
@@ -97,7 +97,7 @@
 }
 
 .contact-form button:hover {
-    background-color: #AC3B61; /* Color change on hover */
+    background-color: var(--second-heading-color); /* Color change on hover */
     transform: scale(1.05); /* Slightly increase size on hover */
 }
 

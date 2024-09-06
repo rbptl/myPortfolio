@@ -12,7 +12,7 @@ function TimelineElement({ role, company, dates, description, location, skills }
 
   return (
     <VerticalTimelineElement
-      contentArrowStyle={{ borderRight: "7px solid #edc7b7"}}
+      contentArrowStyle={{ borderRight: "7px solid var(--card-background-color)"}}
       className="vertical-timeline-element--work"
       location={location}
       date={dates}

@@ -39,14 +39,16 @@ function Home() {
       <div className="text-content slide-in-right">
         <h1>{greeting}</h1>
         <h2>I am <span>Rajas Patil</span></h2>
-        <p>And I'm a Software Engineer who is passionate about transforming complex challenges into innovative solutions, driven by a blend of technical expertise and creative insight.</p>
+        <p>And I'm a curious Software Engineer who defies the stereotype by solving problems instead of creating them.</p>
+        <p>And don't worry—my cat is perfectly safe!</p>
+
         <div className="button-container">
           <a href="assets/ResumeRajas.pdf" download="ResumeRajas.pdf" className="button">
             Resume
           </a>
 
           <Link to="contact-form" activeClass="active" spy={true} smooth={true} offset={-55} duration={500} className="button">
-            Hire Me!
+            Get In Touch!
           </Link>
         </div>
         <div className="social-icons">

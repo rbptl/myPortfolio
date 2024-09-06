@@ -1,6 +1,6 @@
 .projects-container {
     padding: 2px 5em;
-    background-color: #EEE2DC;
+    background-color: var(--background-color);
     text-align: center;
     animation: fadeIn 0.8s ease-in-out both;
 }
@@ -13,7 +13,7 @@
 .projects-container h2 {
     margin-bottom: 50px;
     font-size: 2.8rem;
-    color: #123C69;
+    color: var(--heading-and-text-color);
     text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
 
@@ -30,7 +30,7 @@
     min-height: 280px;
     border-radius: 20px; /* Slightly reduced for a modern look */
     margin: 20px;
-    background-color: #EDC7B7;
+    background-color: var(--card-background-color);
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     cursor: pointer;
@@ -45,7 +45,7 @@
     left: -210%;
     width: 200%;
     height: 200%;
-    background-color: rgba(172, 59, 97, 0.2);
+    background-color: var(--card-animation-color);
     transition: all 0.6s ease-out;
     transform: rotate(30deg);
 }
@@ -62,14 +62,14 @@
 }
 
 .project-card h3 {
-    color: #AC3B61;
+    color: var(--second-heading-color);
     font-size: 28px;
     margin-bottom: 15px;
 }
 
 .project-card p {
     font-size: 18px;
-    color: #123C69;
+    color: var(--heading-and-text-color);
     line-height: 1.6; /* Improved readability */
 }
 
@@ -82,8 +82,8 @@
 }
 
 .skill-tag-in-projects {
-    background-color: #123C69;
-    color: #EDC7B7;
+    background-color: var(--heading-and-text-color);
+    color: var(--card-background-color);
     border-radius: 20px;
     padding: 8px 16px; /* Larger for better visibility */
     font-size: 0.75rem; /* Smaller font size for tags */
