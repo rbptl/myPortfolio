@@ -12,7 +12,7 @@ import Layout from './components/Layout';
 // import ThemeIcon from '@mui/icons-material/Brightness4';
 import './App.css';
 import './styles/colors.css'; 
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import {useEffect} from 'react'
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
   // const { toggleTheme } = themeContext; // Now we destructure safely
   useEffect(() => {
     ReactGA.initialize('G-SWYR3F81L8');
-    ReactGA.pageview(window.location.pathname + window.location.search)
+    ReactGA.send("pageview")
     },[]);
   return (
     <ThemeProvider>
